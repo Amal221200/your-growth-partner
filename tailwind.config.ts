@@ -12,6 +12,7 @@ const config: Config = {
       colors: {
         primary: "var(--primary-color)",
         "primary-light": "var(--primary-light)",
+        "primary-medium": "var(--primary-medium)",
         "primary-dark": "var(--primary-dark)",
       }
     }

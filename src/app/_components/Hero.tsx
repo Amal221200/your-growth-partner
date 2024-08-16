@@ -11,7 +11,7 @@ const Hero = () => {
         <main className="h-screen">
             <div className="flex h-full items-center p-5">
                 <div className="flex-1 space-y-4 text-center sm:text-start">
-                    <h1 className="text-2xl font-extrabold uppercase sm:text-3xl lg:text-4xl">Your Growth Partner</h1>
+                    <h1 className="text-2xl font-extrabold uppercase text-primary sm:text-3xl lg:text-4xl">Your Growth Partner</h1>
                     <h3 className={cn(lobster.className, "md:text-2xl text-xl font-semibold")}>A Futuristic Marketing Agency</h3>
                     <p>We are a group of exited people who help Brands and Creators get bigger by unlocking the potential of Social Media</p>
                     <div className="flex justify-center gap-x-3 sm:justify-start">
