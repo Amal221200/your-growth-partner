@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import ta from "tailwindcss-animate"
 
 const config: Config = {
   content: [
@@ -8,13 +9,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-    },
+      colors: {
+        primary: "var(--primary-color)",
+        "primary-light": "var(--primary-light)",
+        "primary-dark": "var(--primary-dark)",
+      }
+    }
   },
-  plugins: [],
+  plugins: [ta],
 };
 export default config;
