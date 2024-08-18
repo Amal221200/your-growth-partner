@@ -19,7 +19,7 @@ const Footer = () => {
           <p><a href="mailto:amaan@yourgrowthpartner.in">amaan@yourgrowthpartner.in</a></p>
           <h5 className={cn(lobster.className, "font-bold text-2xl")}>Fill Our Contact Form</h5>
           <p>
-            <a href="https://docs.google.com/forms/d/1maHLjZGY7aF7avegjZ3LXQ_yNCZStphhe5JFiqv0Lfw/edit" className='rounded-lg border-2 px-3 py-2 hover:bg-primary-dark hover:text-white' target='_blank'>
+            <a href="https://docs.google.com/forms/d/1maHLjZGY7aF7avegjZ3LXQ_yNCZStphhe5JFiqv0Lfw/edit" className='rounded-lg border-2 px-3 py-2 transition-colors hover:bg-primary-dark hover:text-white' target='_blank'>
               CONTACT US
             </a>
           </p>
@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
         </div>
           <div className=''>
-            <img src="/contact-bg.png" alt="" className='w-[250px]' />
+            <img src="/contact-bg.png" alt="" className='w-[150px] sm:w-[250px]' />
           </div>
       </div>
       <div className='text-center'>
