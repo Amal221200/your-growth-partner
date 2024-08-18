@@ -3,12 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: #8C539A;
-  --primary-medium: #822499;
-  --primary-light: #C2A6F1;
-  --primary-dark: #361177;
+  --primary-color: hsla(288, 30%, 46%, 1);
+  --primary-medium: hsla(288, 62%, 37%, 1);
+  --primary-light: hsla(262, 73%, 80%, 1);
+  --primary-dark: hsla(262, 75%, 27%, 1);
 }
 
 body {
     background-color: #eee;
+}
+
+:is(h1, h2,h3,h4,h5,h6) span{
+  color: var(--primary-medium);
 }
