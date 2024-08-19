@@ -9,10 +9,18 @@
   --primary-dark: hsla(262, 75%, 27%, 1);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #eee;
 }
 
+section {
+  @apply my-8;
+}
+
 :is(h1, h2,h3,h4,h5,h6) span{
-  color: var(--primary-medium);
+  @apply text-primary-medium;
 }

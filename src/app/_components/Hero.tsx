@@ -8,7 +8,7 @@ const lobster = Lobster({ subsets: ['latin'], weight: ['400'] })
 
 const Hero = () => {
     return (
-        <main className="h-screen">
+        <main id="home" className="h-screen">
             <div className="flex h-full items-center p-5">
                 <div className="flex-1 space-y-4 text-center sm:text-start">
                     <h1 className="text-2xl font-extrabold uppercase text-primary sm:text-3xl lg:text-4xl">Your Growth Partner</h1>
@@ -17,7 +17,7 @@ const Hero = () => {
                     <div className="flex justify-center gap-x-3 sm:justify-start">
                         {
                             socialLinks.map(({ href, icon: Icon }) => (
-                                <a href={href} key={href} className="">
+                                <a href={href} key={href}>
                                     <Icon size={25} className="transition-colors hover:text-primary" />
                                 </a>
                             ))
@@ -25,8 +25,8 @@ const Hero = () => {
                     </div>
 
                     <div className="flex justify-center gap-x-3 sm:justify-start">
-                        <a href="#" className="rounded-lg border-2 border-black px-3 py-2 transition-colors hover:bg-primary-dark hover:text-[#eee]">Contact US</a>
-                        <a href="#" className="rounded-lg border-2 border-black px-3 py-2 transition-colors hover:bg-primary-dark hover:text-[#eee]">Download Brochure</a>
+                        <a href="#contact-us" className="rounded-lg border-2 border-black px-3 py-2 transition-colors hover:bg-primary-dark hover:text-[#eee]">Contact US</a>
+                        <a href="/brochure.pdf" download className="rounded-lg border-2 border-black px-3 py-2 transition-colors hover:bg-primary-dark hover:text-[#eee]">Download Brochure</a>
                     </div>
                 </div>
                 <div className="relative hidden h-[80%] flex-1 sm:block">

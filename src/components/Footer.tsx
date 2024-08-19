@@ -8,7 +8,7 @@ const lobster = Lobster({ subsets: ['latin'], weight: ['400'] })
 
 const Footer = () => {
   return (
-    <footer className='mt-3 bg-white p-2'>
+    <footer id='contact-us' className='mt-3 bg-white p-4'>
       <h2 className='mb-2 text-center text-4xl font-bold'>CONTACT US</h2>
       {/* eslint-disable-next-line react/no-unescaped-entities */}
       <h4 className='text-center text-xl font-bold uppercase'><span>Let's</span> Talk Ideas</h4>

@@ -10,10 +10,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "var(--primary-color)",
-        "primary-light": "var(--primary-light)",
-        "primary-medium": "var(--primary-medium)",
-        "primary-dark": "var(--primary-dark)",
+        primary: "hsla(288, 30%, 46%, 1)",
+        "primary-light": "hsla(262, 73%, 80%, 1)",
+        "primary-medium": "hsla(288, 62%, 37%, 1)",
+        "primary-dark": "hsla(262, 75%, 27%, 1)",
       }
     }
   },
