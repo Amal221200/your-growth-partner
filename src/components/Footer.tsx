@@ -1,9 +1,10 @@
 import { socialLinks } from '@/lib/constants'
 import { cn } from '@/lib/utils'
 
-import { Lobster } from "next/font/google"
+import { Inter, Lobster } from "next/font/google"
 
 const lobster = Lobster({ subsets: ['latin'], weight: ['400'] })
+const inter = Inter({ subsets: ['latin'], weight: ['700'] })
 
 
 const Footer = () => {
@@ -11,7 +12,7 @@ const Footer = () => {
     <footer id='contact-us' className='mt-3 bg-white p-4'>
       <h2 className='mb-2 text-center text-4xl font-bold'>CONTACT US</h2>
       {/* eslint-disable-next-line react/no-unescaped-entities */}
-      <h4 className='text-center text-xl font-bold uppercase'><span>Let's</span> Talk Ideas</h4>
+      <h4 className={cn(lobster.className, 'text-center text-xl font-bold')}><span className={cn(inter.className, ' font-bold')}>Let's</span> Talk Ideas</h4>
 
       <div className='mx-auto flex max-w-6xl flex-col items-center justify-center gap-y-3 px-4 sm:flex-row sm:justify-between'>
         <div className='space-y-5 text-center sm:space-y-3 sm:text-start'>
@@ -33,9 +34,9 @@ const Footer = () => {
             }
           </div>
         </div>
-          <div className=''>
-            <img src="/contact-bg.png" alt="" className='w-[150px] sm:w-[250px]' />
-          </div>
+        <div className=''>
+          <img src="/contact-bg.png" alt="" className='w-[150px] sm:w-[250px]' />
+        </div>
       </div>
       <div className='text-center'>
         <h6 className='font-bold'>© 2024 <span>AMAAN SHAIKH</span></h6>
