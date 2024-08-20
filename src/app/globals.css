@@ -13,12 +13,20 @@ html {
     scroll-behavior: smooth;
 }
 
+.fade-in {
+  @apply opacity-0 translate-y-[200px];
+}
+
+.fade-in-top {
+  @apply opacity-0 -translate-y-11;
+}
+
 body {
     background-color: #eee;
 }
 
 section {
-  @apply my-8;
+  @apply my-8 py-4 md:py-8;
 }
 
 :is(h1, h2,h3,h4,h5,h6) span{

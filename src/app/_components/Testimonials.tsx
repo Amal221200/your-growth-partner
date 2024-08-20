@@ -8,7 +8,7 @@ const Testimonials = () => {
       <div className="mx-auto my-3 grid max-w-6xl grid-cols-[repeat(auto-fit,300px)] justify-center gap-4 px-3">
         {
           testimonials.map(testimonial => (
-            <article key={testimonial.name} className='relative max-h-max cursor-pointer space-y-3 overflow-hidden rounded-3xl border border-primary p-3 text-center'>
+            <article key={testimonial.name} className='relative hover:scale-105 transition-all shadow-primary hover:shadow-md hover:bg-[#fff] max-h-max cursor-pointer space-y-3 overflow-hidden rounded-3xl border border-primary p-3 text-center'>
               <div className='relative mx-auto h-[80px] w-[80px]'>
                 <img src={testimonial.img} alt='' className='aspect-square w-full object-contain' />
               </div>

@@ -1,13 +1,14 @@
 import { services } from '@/lib/constants'
 
 const Services = () => {
+   
     return (
-        <section id='services' className='min-h-[80vh]'>
+        <section id='services' className='min-h-[80vh] overflow-hidden'>
             <h1 className='text-center text-3xl font-bold uppercase'>Our <span>Services</span></h1>
             <div className="mx-auto my-3 grid max-w-6xl grid-cols-[repeat(auto-fit,300px)] justify-center gap-5 px-3">
                 {
                     services.map(service => (
-                        <article key={service.title} className='group/service relative cursor-pointer space-y-2 overflow-hidden rounded-md border border-primary p-3 transition-all'>
+                        <article key={service.title} className='service-box group/service relative cursor-pointer space-y-2 overflow-hidden rounded-md border border-primary p-3 transition-all'>
                             <div className='relative mx-auto w-[80%]'>
                                 <img src={service.img} alt={service.title} className='aspect-square w-full object-contain' />
                             </div>

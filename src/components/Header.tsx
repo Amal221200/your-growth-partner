@@ -1,15 +1,23 @@
 "use client"
 import { navLinks } from "@/lib/constants"
 import { cn } from "@/lib/utils"
+import { useGSAP } from "@gsap/react"
+import gsap from "gsap"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
 
 const Header = () => {
+  useGSAP(()=> {
+      gsap.to("#header",{
+        top: 20,
+        delay: 2
+      })
+  }, [])
   const pathname = usePathname()
   
   return (
-    <header className="fixed left-[50%] top-5 z-[100] -translate-x-[50%] rounded-3xl border border-primary-dark px-4 py-3 backdrop-blur">
+    <header id="header" className="fixed left-[50%] -top-14 z-[100] -translate-x-[50%] rounded-3xl border border-primary-dark px-4 py-3 backdrop-blur">
         <nav className="flex gap-x-6 md:gap-y-3">
           {
               navLinks.map(({href, label,icon:Icon}) => (
